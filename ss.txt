@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke Green Br</title>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #05080f;
+      background-image: 
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+      background-size: 550px 550px, 350px 350px, 250px 250px;
+      background-position: 0 0, 40px 60px, 130px 270px;
+      animation: moveStars 60s linear infinite;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0, 40px 60px, 130px 270px; }
+      to { background-position: 550px 550px, 390px 410px, 380px 520px; }
+    }
+
+    .container {
+      animation: float 3.5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .neon-sign {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.8rem, 8vw, 6.5rem);
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #e8ffef;
+      text-shadow:
+        0 0 7px #00ff66,
+        0 0 15px #00ff66,
+        0 0 30px #00ff66,
+        0 0 60px #00b347,
+        0 0 90px #00b347;
+      animation: pulseNeon 2.2s infinite alternate;
+    }
+
+    @keyframes pulseNeon {
+      0% {
+        text-shadow:
+          0 0 5px #00ff66,
+          0 0 12px #00ff66,
+          0 0 25px #00ff66,
+          0 0 50px #00b347;
+        opacity: 0.92;
+      }
+      100% {
+        text-shadow:
+          0 0 10px #00ff66,
+          0 0 22px #00ff66,
+          0 0 45px #00ff66,
+          0 0 80px #00ff66,
+          0 0 110px #008033;
+        opacity: 1;
+      }
+    }
+
+    .subtitle {
+      margin-top: 18px;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: #a3e6bc;
+      letter-spacing: 2px;
+      opacity: 0.85;
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 15px 36px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #05080f;
+      background-color: #00ff66;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      box-shadow: 0 0 20px rgba(0, 255, 102, 0.6);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-download:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 35px rgba(0, 255, 102, 0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="neon-sign">Luke Green Br</h1>
+    <p class="subtitle">SERVIDOR OFICIAL • AMONG US</p>
+    <a href="#" class="btn-download">BAIXAR REGIÃO</a>
+  </div>
+
+</body>
+</html>
